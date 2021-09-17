@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html" style="color: #8B008B;">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Abstractizare în Java</h1><br>
+        <hr>
+        <p>
+            <strong>Abstractizarea</strong> este un proces de ascundere a detaliilor de implementare și de afișare a
+            funcționalității utilizatorului.<br><br>
+            O altă modalitate, arată utilizatorului doar lucruri esențiale și ascunde detaliile interne, de exemplu,
+            trimiterea de SMS-uri unde introduceți textul și trimiteți mesajul. Nu știți procesarea internă despre
+            livrarea mesajului.<br><br>
+            Abstracția vă permite să vă concentrați asupra a ceea ce face obiectul în loc de modul în care îl
+            face.<br><br>
+            Există două moduri de a realiza abstractizarea în Java:
+        <ul>
+            <li><strong>Clasă abstractă</strong> (0 la 100%)</li>
+            <li><strong>Interfață</strong> (100%)</li>
+        </ul>
+        </p>
+
+        <h2>Clasă abstractă în Java</h2>
+        <p>
+            O clasă declarată abstractă este cunoscută sub numele de clasă abstractă. Poate avea metode abstracte și
+            non-abstracte. Trebuie extins și metoda sa implementată. Nu poate fi instanțiat.<br><br>
+            <strong>De reținut:</strong>
+        <ul>
+            <li>O clasă abstractă trebuie declarată cu un cuvânt cheie <span class="keyword">abstract</span>.</li>
+            <li>Poate avea metode abstracte și non-abstracte.</li>
+            <li>Nu poate fi instanțiat.</li>
+            <li>Poate avea și constructori și metode statice.</li>
+            <li>Poate avea metode finale care vor forța subclasa să nu schimbe corpul metodei.</li>
+        </ul>
+        </p>
+
+        <p>
+            <strong>Sintaxa:</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">abstract class</span> &lt;nume_clasa&gt;{}
+            </p>
+        </div>
+        </p>
+
+        <p>
+            <strong>Exemplu: </strong>În acest exemplu, Masina este o clasă abstractă care conține o singură metodă
+            abstractă rulată. Implementarea sa este asigurată de clasa Honda.
+        </p>
+
+        <p>
+            <strong>Honda.java</strong>
+        </p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Masina{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> porneste();<br>
+                }<br><br>
+
+                <span class="keyword">public class</span> Honda <span class="keyword">extends </span> Masina{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> porneste(){ System.out.println(<span
+                    class="string">"conduceti cu grija"</span>); }<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masina obj = <span class="keyword">new</span> Honda();<span
+                    class="comment"> //cream obiectul</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.porneste();<span class="comment"> //apelam metoda</span><br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">conduceti cu grija
+            </p>
+        </div>
+        <br><br>
+        <h2>Interfață în Java</h2>
+        <p>
+            O interfață în Java este un plan al unei clase. Are constante statice și metode abstracte.<br><br>
+            Interfața în Java este un mecanism de realizare a abstractizării. Pot exista numai metode abstracte în
+            interfața Java, nu corpul metodei. Este folosit pentru a realiza abstracția și moștenirea multiplă în
+            Java.<br><br>
+            Cu alte cuvinte, puteți spune că interfețele pot avea metode și variabile abstracte. Nu poate avea un corp
+            de metodă.<br><br>
+            Interfața Java reprezintă, de asemenea, relația ESTE-UN.<br><br>
+
+            Nu poate fi instanțiat la fel ca clasa abstractă.<br><br>
+
+            De la Java 8, putem avea metode implicite și statice într-o interfață.<br><br>
+
+            De la Java 9, putem avea metode private într-o interfață.<br><br>
+        </p>
+        <p>
+            <strong>De ce să folosim interfețele: </strong>Există în principal trei motive pentru a utiliza interfața.
+            Acestea sunt prezentate mai jos.
+        <ul>
+            <li>Este folosit pentru a realiza abstractizarea.</li>
+            <li>Prin interfață, putem sprijini funcționalitatea moștenirii multiple.</li>
+            <li>Poate fi folosit pentru a realiza o cuplare slabă.</li>
+        </ul>
+        </p>
+        <p>
+            <strong>Sintaxa:</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">interface</span> &lt;nume_interfata&gt; {}
+            </p>
+        </div>
+
+        <p>
+            <strong>Exemplu: </strong>În acest exemplu, interfața imprimabilă are o singură metodă, iar implementarea sa
+            este furnizată în clasa A6.
+        </p>
+
+        <p>
+            <strong>Honda.java</strong>
+        </p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">interface</span> Printable{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> afiseaza();<br>
+                }<br><br>
+
+                <span class="keyword">public class</span> A6 <span class="keyword">implements </span> Printable{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public void</span> afiseaza(){ System.out.println(<span
+                    class="string">"Hello"</span>); }<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masina obj = <span class="keyword">new</span> Honda();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.porneste();<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p>
+            <strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">
+                Hello
+            </p>
+        </div>
+        </p>
+
+        <br>
+        
+        <h2>Relația dintre clase și interfețe</h2>
+        <p>
+            Așa cum se arată în figura dată mai jos, o clasă extinde o altă clasă, o interfață extinde o altă interfață,
+            dar o clasă implementează o interfață.
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img32.png" width="500px" height="200px">
+        </p>
+        <p>
+            Dacă o clasă implementează mai multe interfețe sau o interfață extinde mai multe interfețe, este cunoscută
+            sub numele de moștenire multiplă.
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

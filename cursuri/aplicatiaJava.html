@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html" style="color: #8B008B;">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Aplicația "HelloJava"</h1><br>
+        <hr>
+        <img style="float: right;" src="../img/icon.png" width="350px" height="310px">
+        <p>
+
+            În această secțiune, vom învăța cum să scriem cel mai simplu program Java. După instalarea JDK-ului(Java
+            Development Kit) putem
+            scrie cu ușurință orice program in Java.<br><br>
+            Pentru a crea un program Java simplu, trebuie să creați o clasă care conține metoda "main". Termenul de
+            clasă și metodă sunt explicate în secțiuneaSă înțelegem
+            mai întâi cerința.<br><br>
+        </p>
+        <h2>Cerințele pentru exemplul Hello Java</h2>
+        <p>
+            Pentru executarea oricărui program Java, trebuie instalate corect urmatoarele:
+        <ul>
+            <li>Instalați JDK. Dacă nu l-ați instalat, descărcați JDK-ul de <a
+                    href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank"
+                    style="font-weight: bold; text-decoration: underline;">aici</a> și instalați-l.</li>
+            <li>Setați calea directorului jdk / bin. <a
+                    href="https://www.geeksforgeeks.org/set-temporary-permanent-paths-java/" target="_blank"
+                    style="font-weight: bold; text-decoration: underline;">Tutorial</a></li>
+            <li>Creați programul Java</li>
+            <li>Compilați și rulați programul Java</li>
+        </ul>
+        </p>
+
+        <h2>Crearea primului program Hello Java</h2>
+        <p>
+            Să creăm programul HelloJava.<br><br>
+            Pentru a scrie un program, trebuie să deschideți Notepad sau orice IDE(Integrated Development Environment)
+            cum ar fi Eclipse sau IntelliJ și să scrieți un program simplu așa cum am arătat mai jos:
+        </p>
+        <p><strong>HelloJava.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">class</span> HelloJava{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Hello World"</span>);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p>Salvați fișierul ca HelloJava.java.<br><br>
+
+            Pentru a compila și rula programul de mai sus, trebuie să deschideți promptul de comandă(Command Prompt)
+            prin meniul Start
+            -> Toate programele -> Accesorii -> Command Prompt sau se scrie "cmd" in bara de adrese pentru a deschide
+            Command Prompt în folder-ul curent. Dacă se deschide Command Prompt din bara de start, va trebui schimbat
+            directorul folosind comanda "cd".
+            Când am terminat corect cu toți pașii, acesta arată
+            următoarea ieșire:<br><br>
+            Odata deschis Command Prompt-ul, se va compila fisierul Java folosind comanda "javac" urmat de numele
+            fisierului.
+            După compilare, se va crea un fișier .class care se va executa folosind comanda "java" urmat de numele
+            fișierului nou creat.
+        </p>
+        <img src="../img/img15.png " width="550px" height="250px">
+        <p>
+            <strong>Compilare:</strong><br>
+            javac HelloJava.java<br><br>
+            <strong>Rulare:</strong><br>
+            java HelloJava<br><br>
+
+            <strong>Afișare:</strong><br>
+            <div class="output">
+                <p style="padding-left: 10px;">HelloJava</p>
+            </div>
+
+            <strong>Fluxul de complilare:</strong><br>
+            Când compilăm programul Java folosind tool-ul "javac", compilatorul Java convertește codul sursă în cod de
+            octeți.<br>
+        </p>
+        <img src="../img/img16.png " width="650px" height="190px"><br><br><br>
+        <h2>Parametrii utilizați în primul program Java</h2>
+        <p>
+            Să vedem care este semnificația cuvintelor class, public, static, void, main, String[],
+            System.out.println().<br>
+        <ul>
+            <li><strong>class</strong> folosit pentru a declara o clasă în Java.</li>
+            <li><strong>public</strong> este un modificator de acces care reprezintă vizibilitate. Înseamnă că este
+                vizibil pentru toți.</li>
+            <li><strong>static</strong> este un cuvânt cheie. Dacă declarăm orice metodă ca fiind statică, aceasta este
+                cunoscută sub numele de "metodă statică". Avantajul principal al metodei statice este că nu este nevoie
+                să
+                creați un obiect pentru a invoca metoda statică. Metoda main() este executată de JVM, deci nu necesită
+                crearea unui obiect pentru a invoca metoda main(). Deci, economisește memorie.</li>
+            <li><strong>void</strong> este tipul de returnare al metodei. Înseamnă că nu returnează nicio valoare.</li>
+            <li><strong>main</strong> reprezintă punctul de plecare al programului.</li>
+            <li><strong>String[] args</strong> sau <strong> String args[]</strong> este utilizat pentru argumentele din
+                linia de comandă.</li>
+            <li><strong>System.out.println()</strong> este folosit pentru a imprima declarația. Aici, "System" este o
+                clasă, "out" este un obiect al clasei "PrintStream", "println()" este o metodă a clasei "PrintStream".</li>
+        </ul>
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

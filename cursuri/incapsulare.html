@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html" style="color: #8B008B;">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Încapsulare în Java</h1><br>
+        <hr>
+        <img style="float: right;" src="../img/img33.png" width="450px" height="300px">
+        <p>
+            Incapsularea în Java este un mecanism de împachetare a datelor (variabile) și a codului care acționează
+            asupra datelor (metode) împreună ca o singură unitate. În încapsulare, variabilele unei clase vor fi ascunse
+            de alte clase și pot fi accesate numai prin metodele clasei lor curente. Prin urmare, este, de asemenea,
+            cunoscut sub numele de ascunderea datelor.<br><br>
+            Incapsularea în Java este un proces de împachetare a codului și a datelor într-o singură unitate, de
+            exemplu, o capsulă amestecată din mai multe medicamente.
+        </p>
+        <h2>Avantajul încapsulării în Java</h2>
+        <p>
+            Furnizând doar o metodă setter sau getter, puteți face clasa <strong>read-only sau write-only</strong>. Cu
+            alte
+            cuvinte, puteți sări peste metodele getter sau setter.<br><br>
+            Vă oferă <strong>controlul asupra datelor</strong>. Să presupunem că doriți să setați valoarea id care ar
+            trebui să fie mai
+            mare decât 100, puteți scrie logica în metoda setter. Puteți scrie logica de a nu stoca numerele negative în
+            metodele setter.<br><br>
+
+            Este o modalitate de a realiza <strong>ascunderea datelor</strong> în Java, deoarece alte clase nu vor putea
+            accesa datele
+            prin intermediul membrilor de date private.<br><br>
+
+            Clasa de încapsulare este <strong>ușor de testat</strong>. Deci, este mai bine pentru testarea
+            unității.<br><br>
+
+            IDE-urile standard oferă facilitatea de a genera getters și seteri. Deci, este <strong>ușor și rapid să
+                creați o
+                clasă încapsulată</strong> în Java.<br><br>
+            <strong>Pentru a realiza încapsularea în Java:</strong>
+        <ul>
+            <li>Declarați variabilele unei clase ca fiind private.</li>
+            <li>Furnizați metode de setter și getter publice pentru a modifica și vizualiza valorile variabilelor.</li>
+        </ul>
+        </p>
+
+        <p><strong>Student.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="comment">// o clasă Java care este o clasă complet încapsulată.<br>
+                    // are un membru privat de date și metode getter și setter.</span><br>
+                <span class="keyword">package </span>com.invataJava;<br>
+                <span class="keyword">public class</span> Student{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="comment">// date private</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">private </span>String nume;<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">// getter pentru nume</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public </span>String getNume(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return </span>nume;<br>
+                &nbsp;&nbsp;&nbsp;}<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">// setter pentru nume</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public void </span>setNume(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.nume = nume;<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+
+
+                }
+            </p>
+        </div>
+
+        <p><strong>Test.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="comment">// o clasă Java care testeaza clasa incapsulata</span><br>
+                <span class="keyword">package </span>com.invataJava;<br>
+                <span class="keyword">public class</span> Test{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// cream o instanta a clasei incapsulate</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student s = <span class="keyword">new</span> Student();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// setam numele din obiectul Student</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s.setNume("Andrei");  <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// luam numele din obiectul Student</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(s.getName());<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">
+                Andrei
+            </p>
+        </div>
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

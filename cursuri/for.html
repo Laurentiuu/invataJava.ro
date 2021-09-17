@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html" style="color: #8B008B;">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>for</h1><br>
+        <hr>
+        <p>
+            Bucla Java for este utilizată pentru a itera de mai multe ori o parte a programului. Dacă numărul de
+            iterații este fix, se recomandă utilizarea pentru buclă.<br><br>
+            Java pentru buclă este utilizată pentru a itera o parte din proaIn Java, pentru buclă este similară cu C și
+            C ++. Ne permite să inițializăm variabila buclă, să verificăm starea și să creștem / micșorăm într-o singură
+            linie de cod. Folosim bucla for numai atunci când știm exact de câte ori dorim să executăm blocul code.ram
+            de mai multe ori. Dacă numărul de iterații este fix, se recomandă utilizarea pentru buclă.<br><br>
+            <strong>Sintaxa:</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">for</span>(inițializare, condiție, increment/decrement){<br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">//instructiuni care se vor repeta</span><br>
+                }
+            </p>
+        </div>
+        </p>
+
+        <h2>Exemplu</h2>
+        <p>
+            <strong>Exemplu.java</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Exemplu{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> sum = <span
+                    class="variable">0</span>;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">int </span>i
+                = <span class="variable">1</span>; i &lt;= <span class="variable">10</span>; i++){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + i;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Afisare suma primelor 10
+                    numere naturale: "</span> + sum);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">Afisare suma primelor 10 numere naturale: 55</p>
+        </div>
+        </p>
+        </p>
+
+        <h2>for-each</h2>
+        <p>
+            Java oferă o buclă îmbunătățită pentru a traversa structurile de date, cum ar fi matrice sau colecție. În
+            bucla pentru fiecare, nu este nevoie să actualizăm variabila buclă. Sintaxa pentru a utiliza bucla pentru
+            fiecare în java este dată mai jos.
+            <strong>Sintaxa:</strong>
+            <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">for</span>(tipul_de_data var : numele_sirului/numele_colectiei){<br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">//instructiuni care se vor repeta</span><br>
+                }
+            </p>
+            </div>
+        </p>
+
+        <h2>Exemplu</h2>
+        <p>
+            <strong>Exemplu.java</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Exemplu{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[] names = {<span class="string">"Java"</span>, <span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>};<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Afisare continutul sirului de nume: \n</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(String nume : limbaje){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(nume);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+            <div class="output">
+                <p style="padding-left: 10px;">Afisare continutul sirului de nume:<br>Java<br>C<br>C++<br>Python<br>JavaScript</p>
+            </div>
+            </p>
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

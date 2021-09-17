@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html" style="color: #8B008B;">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Declarațiile break și continue în Java</h1><br>
+        <hr>
+        <h2>Break</h2>
+        <p>
+            Când se întâlnește o instrucțiune break într-o buclă, bucla este terminată imediat și controlul programului
+            se reia la următoarea instrucțiune care urmează buclei.<br><br>
+            Instrucțiunea Java break este utilizată pentru a rupe bucla sau a comuta instrucțiunea. Se întrerupe fluxul
+            curent al programului în condiții specificate. În cazul buclei interioare, aceasta rupe numai bucla
+            interioară.<br><br>
+            Putem folosi instrucțiunea Java break în toate tipurile de bucle, cum ar fi pentru buclă, buclă while și
+            buclă do-while.
+        </p>
+        <strong>Sintaxa:</strong><br>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                Conditie-de-salt;<br>
+                <span class="keyword">break;</span>
+            </p>
+        </div>
+        <br>
+        <strong>Exemplu:</strong><br><br>
+        <strong>TestBreak.java</strong><br><br>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> TestBreak{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// folosim bucla for</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">int</span> i
+                = <span class="variable">1</span>; i &lt;= <span class="variable">10</span>; i++){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>(i == <span
+                    class="variable">5</span>){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//spargere
+                    bucla</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="keyword">break</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">1<br>2<br>3<br>4</p>
+        </div>
+        </p>
+
+        <h2>Continue</h2>
+        <p>
+            Instrucțiunea continue este utilizată în structura de control a buclei atunci când trebuie să treceți
+            imediat la următoarea iterație a buclei. Poate fi folosit cu bucla pentru bucla sau bucla while.<br><br>
+            Instrucțiunea Java continue este utilizată pentru a continua bucla. Continuă fluxul curent al programului și
+            omite codul rămas în condiția specificată. În cazul unei bucle interioare, aceasta continuă numai bucla
+            interioară.<br><br>
+            Putem folosi instrucțiunea Java continue în toate tipurile de bucle, cum ar fi pentru buclă, buclă while și
+            buclă do-while.
+        </p>
+
+        <strong>Sintaxa:</strong><br>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                Conditie-de-salt;<br>
+                <span class="keyword">continue;</span>
+            </p>
+        </div>
+        <br>
+        <strong>Exemplu:</strong><br><br>
+        <strong>TestBreak.java</strong><br><br>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> TestBreak{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// folosim bucla for</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">int</span> i
+                = <span class="variable">1</span>; i &lt;= <span class="variable">10</span>; i++){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>(i == <span
+                    class="variable">5</span>){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//sare
+                    peste restul declaratiei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="keyword">continue</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p>
+            <strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">1<br>2<br>3<br>4<br>6<br>7<br>8<br>9<br>10</p>
+        </div>
+        </p>
+        <p>
+            După cum puteți vedea în rezultatul de mai sus, 5 nu este imprimat pe consolă. Acest lucru se datorează
+            faptului că bucla este continuată când ajunge la 5.
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

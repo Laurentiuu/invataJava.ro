@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px" height="50px"
+            alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html" style="color: #8B008B;">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Despre Java</h1><br>
+        <hr>
+        <p>
+            <img style="float: right;" src="../img/javaLogo.png" width="350px" height="200px">
+            Java este un <b>limbaj de programare</b> și o <b>platformă</b>. Java este un limbaj de programare de nivel
+            înalt, robust,
+            orientat spre obiecte și sigur. Java a fost dezvoltat de Sun Microsystems (care este acum filiala Oracle) în
+            anul 1995. James Gosling este cunoscut ca tatăl Java. Înainte de Java, numele său era Oak. Deoarece Oak era
+            deja o companie înregistrată, așa că James Gosling și echipa sa au schimbat numele din Oak în Java.
+            <br><br><strong>Platformă:</strong> orice mediu hardware sau software în care rulează un program este
+            cunoscut sub numele de
+            platformă. Deoarece Java are un mediu de execuție (JRE) și API, se numește platformă.<br><br>
+            Există multe dispozitive în care Java este utilizat în prezent. Unele dintre ele sunt după cum urmează:
+        <ol>
+            <li>Aplicații desktop, cum ar fi Acrobat Reader, media player, Antivirus etc.</li>
+            <li>Aplicații Web.</li>
+            <li>Telefon</li>
+            <li>Embedded System.</li>
+            <li>Robotica.</li>
+            <li>Jocuri etc.</li>
+        </ol>
+        </p>
+        <h2>Exemplu de cod</h2>
+        <p>
+            Mai jos este un exemplu de cod Java care afișează în consolă mesajul "Hello Java". Fiecare cuvânt
+            cheie(keyword) se
+            va descrie in secțiunile viitoare.<br>
+        </p>
+
+        <p><strong>HelloJava.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">class</span> HelloJava{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Hello World"</span>);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }</p>
+        </div><br><br>
+
+        <h2>Tipuri de aplicații Java</h2>
+        <p>
+            Există, în principal, 4 tipuri de aplicații care pot fi create folosind programarea Java:
+            <br><br>
+            <strong>1) Aplicații independente(standalone)</strong><br><br>
+            Aplicațiile independente sunt, de asemenea, cunoscute sub numele de aplicații desktop sau aplicații bazate
+            pe ferestre. Acestea sunt programe software tradiționale pe care trebuie să le instalăm pe fiecare
+            calculator.
+            Exemple de aplicații independente sunt Media Player, antivirus etc. AWT și Swing sunt utilizate în Java
+            pentru crearea de aplicații independente.
+
+            <br><br>
+            <strong>2) Aplicații Web</strong><br><br>
+            O aplicație care foloseste partea de server și creează o pagină dinamică se numește aplicație web. În
+            prezent, tehnologiile Servlet, JSP, Struts, Spring, Hibernate, JSF etc. sunt utilizate pentru crearea
+            aplicațiilor web în Java.
+
+            <br><br>
+            <strong>3) Aplicații Enterprise</strong><br><br>
+            O aplicație care este distribuită în mediu fizic, cum ar fi aplicațiile bancare etc. se numește aplicație
+            pentru
+            întreprindere(enterprise). Are avantaje precum securitatea la nivel înalt, echilibrarea încărcării și
+            clusterizarea. În
+            Java, EJB este utilizat pentru crearea de aplicații enterprise.
+
+            <br><br>
+            <strong>4) Aplicații mobile</strong><br><br>
+            O aplicație creată pentru dispozitive mobile se numește aplicație mobilă. În prezent, Android și Java ME
+            sunt utilizate pentru crearea de aplicații mobile.
+        </p>
+        <br>
+
+        <h2>Platforme Java</h2>
+        <p>
+            Există 4 platforme sau ediții Java:
+            <br><br>
+            <strong>1) Java SE (Java Standard Edition)</strong><br><br>
+            Este o platformă de programare Java. Include API-uri de programare Java, cum ar fi java.lang, java.io,
+            java.net, java.util, java.sql, java.math etc.
+            Include topicuri de bază cum ar fi OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O
+            Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+            <br><br>
+            <strong>2) Java EE (Java Enterprise Edition)</strong><br><br>
+            Este o platformă de enterprise care este utilizată în principal pentru a dezvolta aplicații web și de
+            întreprindere. Este construit deasupra platformei Java SE. Include subiecte precum Servlet, JSP, Servicii
+            Web, EJB, JPA etc.
+            <br><br>
+            <strong>4) JavaFX</strong><br><br>
+            Este o micro platformă dedicată aplicațiilor mobile.
+            <br><br>
+            <strong>3) Java ME (Java Micro Edition)</strong><br><br>
+            Este folosit pentru a dezvolta aplicații bogate de internet. Folosește un API ușor de interfață cu utilizatorul.
+
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px" alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html" style="color: #8B008B;">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Metode în Java</h1><br>
+        <hr>
+        <p>
+            În general, o <strong>meotdă</strong> este o modalitate de a efectua anumite sarcini. În mod similar, metoda
+            din Java este o
+            colecție de instrucțiuni care efectuează o sarcină specifică. Oferă reutilizarea codului. De asemenea, putem
+            modifica cu ușurință codul folosind metode. În această secțiune, vom afla <strong>ce este o metodă în Java,
+                tipuri
+                de metode, declararea metodei</strong> și <strong>cum să apelăm o metodă în Java</strong>.
+        </p>
+        <br>
+        <h2>Ce este o metodă in Java?</h2>
+        <p>O metodă este un bloc de cod sau o colecție de instrucțiuni sau un set de cod grupat împreună pentru a
+            efectua o anumită sarcină sau operație. Este folosit pentru a realiza reutilizarea codului. Scriem o metodă
+            o dată și o folosim de multe ori. Nu este necesar să scriem cod din nou și din nou. De asemenea, oferă
+            modificarea ușoară și lizibilitatea codului, doar prin adăugarea sau eliminarea unei bucăți de cod. Metoda
+            este executată numai atunci când o apelăm sau o invocăm.</p>
+        <p>
+            Cea mai importantă metodă în Java este metoda <strong>main()</strong>.
+        </p>
+        <br>
+        <h2>Declararea unei metode</h2>
+        <p>
+            Declarația metodei oferă informații despre atributele metodei, cum ar fi vizibilitatea, tipul de returnare,
+            numele și argumentele. Are șase componente care sunt cunoscute sub numele de <strong>antet de
+                metodă</strong>, așa cum am arătat în figura următoare.
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img22.png" width="600px" height="300px">
+        </p>
+
+        <p>
+            <strong>Signatura metodei: </strong>Fiecare metodă are o semnătură de metodă. Este o parte a declarației
+            metodei. Include <strong>numele metodei și lista de parametri</strong>.
+        </p>
+        <p>
+            <strong>Modificatorii de acces: </strong>Specificatorul de acces sau modificatorul este tipul de acces al
+            metodei. Specifică vizibilitatea metodei. Java oferă patru tipuri de identificator de acces:
+        <ul>
+            <li><span class="keyword"><strong>public: </strong></span>metoda este accesibilă pentru toate clasele atunci
+                când folosim specificatorul public în aplicația noastră.</li>
+            <li><span class="keyword"><strong>private: </strong></span>când folosim un identificator de acces privat,
+                metoda este accesibilă doar în clasele în care este definită.</li>
+            <li><span class="keyword"><strong>protected: </strong></span>când folosim un identificator de acces
+                protejat, metoda este accesibilă în cadrul aceluiași pachet sau subclase dintr-un pachet diferit.</li>
+            <li><span class="keyword"><strong>(default)-fără moodificator: </strong></span>când nu folosim niciun
+                specificator de acces în declarația metodei, Java folosește implicit un identificator de acces implicit.
+                Este vizibil numai din același pachet.</li>
+        </ul>
+        </p>
+
+        <p>
+            <strong>Tipul returnat: </strong>Tipul returnat este un tip de date pe care îl returnează metoda. Poate avea
+            un tip de date primitiv, obiect, colecție, gol, etc. Dacă metoda nu returnează nimic, vom folosi cuvântul
+            cheie gol.
+        </p>
+
+        <p>
+            <strong>Numele metodei: </strong> este un nume unic care este folosit pentru a defini numele unei metode.
+            Trebuie să
+            corespundă funcționalității metodei. Să presupunem că, dacă creăm o metodă pentru scăderea a două
+            numere, numele metodei trebuie să fie scade(). O metodă este invocată prin numele său.
+        </p>
+
+        <p>
+            <strong>Corpul metodei: </strong>Este o parte a declarației metodei. Conține toate acțiunile care trebuie
+            efectuate.
+            Este închisă în perechea de acolade.
+        </p>
+        <br>
+        <h2>Apelarea unei metode</h2>
+        <p>Odată ce am definit o metodă, aceasta ar trebui numită. Apelarea unei metode într-un program este simplă.
+            Când apelăm sau invocăm o metodă definită de utilizator, controlul programului se transferă la metoda
+            apelată.
+        </p>
+        <p><strong>NumarPar.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">import</span> java.util.Scanner;<br>
+
+                <span class="keyword">public class</span> NumarPar{<br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">//metoda definita</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> numarPar(<span class="keyword">int </span> n){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//corpul metodei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if </span>(num % <span
+                    class="variable">2</span> == <span class="variable">0</span>){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(n + <span class="string">"este
+                    par"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(n + <span class="string">"NU
+                    este par"</span>);<br>
+
+                &nbsp;&nbsp;&nbsp;}<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">//cream un obiect de tipul Scanner</span><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanner scan = <span class="keyword">new</span>
+                Scanner(System.in);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">//citim valoarea de la user</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(<span class="string">"Introduceti un numar:
+                    "</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> n = scan.nextInt();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//apelarea metodei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numarPar(n);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">Introduceti un numar: 12<br>
+                12 este par</p>
+        </div>
+        </p>
+
+        <br>
+        <h2>Metoda instanței</h2>
+        <p>Metoda clasei este cunoscută ca o metodă de instanță. Este o metodă nestatică definită în clasă. Înainte de a
+            apela sau invoca metoda instanței, este necesar să creați un obiect din clasa sa. Să vedem un exemplu de
+            metodă de instanță.
+        </p>
+        <p><strong>Suma.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">import</span> java.util.Scanner;<br>
+                <span class="keyword">public class</span> Suma{<br>
+
+
+                &nbsp;&nbsp;&nbsp;<span class="comment">//metoda definita</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> suma(<span class="keyword">int </span> n1, <span
+                    class="keyword">int </span> n2){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//corpul metodei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> s;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = n1 + n2; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//returnarea sumei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> s;<br>
+                &nbsp;&nbsp;&nbsp;}<br><br>
+
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//creare obiect al unei clase</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suma obj = <span class="keyword">new </span>Suma(); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//apelare metoda instantei</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Suma lui a si b este:
+                    "</span>+obj.add(<span class="variable">12</span>,<span class="variable">13</span>));<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">Suma lui a si b este: 25</p>
+        </div>
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

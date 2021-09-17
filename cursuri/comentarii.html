@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html" style="color: #8B008B;">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Coemntarii în Java</h1><br>
+        <hr>
+        <p>
+            Comentariile Java sunt declarațiile dintr-un program care nu sunt executate de compilator și interpretor.
+        </p>
+        <h2>De ce folosim comentariile într-un cod?</h2>
+        <p>
+        <ul>
+            <li>Comentariile sunt folosite pentru a face programul mai lizibil prin adăugarea detaliilor codului.</li>
+            <li>Este ușor să întrețineți codul și să găsiți cu ușurință erorile.</li>
+            <li>Comentariile pot fi folosite pentru a oferi informații sau explicații despre variabilă, metodă, clasă
+                sau orice afirmație.</li>
+            <li>Poate fi, de asemenea, utilizat pentru a preveni executarea codului programului în timpul testării
+                codului alternativ.</li>
+        </ul>
+        </p>
+        <h2>Tipuri de comentarii Java</h2>
+        <p>
+            Există trei tipuri de comentarii în Java:
+        <ul>
+            <li><strong>Comentariu Single Line</strong></li>
+            <p>
+                Comentariul cu o singură linie este utilizat pentru a comenta doar o singură linie din cod. Este cel
+                mai utilizat și mai ușor mod de a comenta afirmațiile.<br><br>
+                Comentariile cu o singură linie încep cu două bare oblice înainte (//). Orice text din fața // nu
+                este executat de Java.<br><br>
+                <strong>Sintaxa:</strong><br>
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    <span class="comment">// Acesta este un comentariu Single Line</span>
+                </p>
+            </div>
+            </p>
+            <li><strong>Comentariu Multi Line</strong></li>
+            <p>
+                Comentariul cu mai multe linii este utilizat pentru a comenta mai multe linii de cod. Poate fi folosit
+                pentru a explica un fragment de cod complex sau pentru a comenta mai multe linii de cod la un moment dat
+                (deoarece va fi dificil să folosiți comentarii cu o singură linie acolo).<br><br>
+                Comentariile pe mai multe linii sunt plasate între / * și * /. Orice text între / * și * / nu este
+                executat de Java.<br><br>
+                <strong>Sintaxa:</strong><br>
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    <span class="comment">/*<br> Acesta<br> este<br> un comentariu <br> Multi Line <br> */</span>
+                </p>
+            </div>
+            </p>
+            <li><strong>Comentariu Document</strong></li>
+            <p>
+                Comentariile despre documentație sunt de obicei utilizate pentru a scrie programe mari pentru un proiect
+                sau o aplicație software, deoarece ajută la crearea documentației API. Aceste API-uri sunt necesare
+                pentru referință, adică care clase, metode, argumente etc. sunt utilizate în cod.<br><br>
+                Pentru a crea API de documentare, trebuie să folosim instrumentul javadoc. Comentariile documentației
+                sunt plasate între / ** și * /.<br><br>
+                <strong>Sintaxa:</strong><br>
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    <span class="comment">/**<br>*<br>*Putem folosi diverse etichete pentru a descrie diferiti parametrii(autor, versiune)<br>*Putem folosi și etichete HTML<br>*<br>*/</span>
+                </p>
+            </div>
+            </p>
+        </ul>
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

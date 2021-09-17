@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html" style="color: #8B008B;">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Constructor în Java</h1><br>
+        <hr>
+        <p>
+            În Java, un constructor este un bloc de coduri similar cu metoda. Se apelează atunci când se creează o
+            instanță a clasei. În momentul apelării constructorului, memoria pentru obiect este alocată în memorie.
+        </p>
+        <p>
+            Este un tip special de metodă care este utilizată pentru a inițializa obiectul.
+        </p>
+        <p>
+            De fiecare dată când un obiect este creat folosind cuvântul cheie <span class="keyword">new</span>
+            &lt;numele clasei&gt; (), este chemat cel puțin un constructor.
+        </p>
+
+        <p>
+            Se apelează un constructor implicit dacă nu există un constructor disponibil în clasă. În acest caz,
+            compilatorul Java oferă implicit un constructor implicit.
+        </p>
+
+        <p>
+            Există două tipuri de constructori în Java: constructor fără argumente și constructor parametrizat.
+        </p>
+
+        <p>
+            <strong>Notă:</strong> Se numește constructor, deoarece construiește valorile în momentul creării
+            obiectului. Nu este necesar
+            să scrieți un constructor pentru o clasă. Acest lucru se datorează faptului că compilatorul Java creează un
+            constructor implicit dacă clasa dvs. nu are.
+        </p>
+        <br>
+        <h2>Crearea unui constructor</h2>
+
+        <p>
+            Există două reguli definite pentru constructor.
+        <ul>
+            <li>Numele constructorului trebuie să fie același cu numele clasei sale</li>
+            <li>Un constructor nu trebuie să aibă niciun tip de returnare explicit</li>
+            <li>Un constructor Java nu poate fi abstract, static, final și sincronizat</li>
+        </ul>
+
+        </p>
+
+        <p>
+            <strong>Notă:</strong> Notă: Putem folosi modificatori de acces în timp ce declarăm un constructor.
+            Controlează
+            crearea obiectului. Cu alte cuvinte, putem avea un constructor privat, protejat, public sau implicit în
+            Java.
+        </p>
+
+        <br>
+        <h2>Tipuri de contructori</h2>
+        <p>
+            Există două tipuri de constructori în Java:
+        <ol>
+            <li><strong>Constructor implicit (constructor fără argumente)</strong></li>
+            <p>
+                Un constructor se numește „Constructor implicit” atunci când nu are niciun parametru.<br>Sintaxa
+                constructorului implicit:
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    &lt;numele_clasei&gt;(){}
+                </p>
+            </div>
+            <br>
+            În acest exemplu, creăm constructorul fără argumente în clasa Bicicleta. Acesta va fi invocat în momentul
+            creării
+            obiectului.<br><br>
+            <p><strong>Bicicleta.java</strong></p>
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    <span class="keyword">public class</span> Bicicleta{<br>
+
+                    &nbsp;&nbsp;&nbsp;<span class="comment">//crearea unui constructor implicit</span><br>
+                    &nbsp;&nbsp;&nbsp;Bicicleta(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Bicicleta a fost
+                        creata"</span>);<br>
+
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//apelare constructor</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bicicleta b = <span class="keyword">new</span> Bicicleta();<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    }
+                </p>
+            </div>
+
+            <p><strong>Afișare:</strong><br>
+            <div class="output">
+                <p style="padding-left: 10px;">Bicicleta a fost creata</p>
+            </div>
+            </p>
+
+            Dacă nu există un constructor într-o clasă, compilatorul creează automat un constructor implicit.
+            <p style="text-align: center;">
+                <img src="../img/img23.png" width="500px" height="200px">
+            </p>
+
+            </p>
+
+            <li><strong>Constructor parametrizat</strong></li>
+            <p>
+                Un constructor care are un număr specific de parametri se numește constructor parametrizat.<br><br>
+                Constructorul parametrizat este utilizat pentru a furniza valori diferite obiectelor distincte. Cu toate
+                acestea, puteți furniza aceleași valori.
+                În acest exemplu, am creat constructorul clasei Student care are doi parametri. Putem avea orice număr
+                de parametri în constructor.
+                <br><br>
+                În Java, un constructor este la fel ca o metodă, dar fără tip return. Poate fi, de asemenea,
+                supraîncărcat ca metodele Java.<br><br>
+                Supraîncărcarea constructorului în Java este o tehnică de a avea mai mult de un constructor cu liste de
+                parametri diferiți. Acestea sunt aranjate astfel încât fiecare constructor să îndeplinească o sarcină
+                diferită. Acestea sunt diferențiate de compilator prin numărul de parametri din listă și tipurile lor.
+            </p>
+            <p><strong>Student.java</strong></p>
+            <div class="codeblock">
+                <p style="padding-left: 10px;">
+                    <span class="keyword">public class</span> Student{<br>
+
+                    &nbsp;&nbsp;&nbsp;<span class="keyword">int</span> id;<br>
+                    &nbsp;&nbsp;&nbsp;String nume;<br>
+                    &nbsp;&nbsp;&nbsp;<span class="keyword">int</span> varsta;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="comment">//crearea unui constructor cu doua argumente</span><br>
+                    &nbsp;&nbsp;&nbsp;Student(<span class="keyword">int</span> i, String n){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.id = i;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.nume = n;<br>
+
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="comment">//crearea unui constructor cu trei argumente</span><br>
+                    &nbsp;&nbsp;&nbsp;Student(<span class="keyword">int</span> i, String n, <span
+                        class="keyword">int</span> v){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.id = i;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.nume = n;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.varsta = v;<br>
+
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    <br>
+
+                    &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> afisare(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(id + <span class="string">" "</span> + nume
+                    <span class="string">" "</span> + varsta);<br>
+
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    <br>
+
+                    &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//apelare constructor</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student s1 = <span class="keyword">new</span> Student(<span
+                        class="variable">111</span>, <span class="string">"Andrei"</span>);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student s2 = <span class="keyword">new</span> Student(<span
+                        class="variable">111</span>, <span class="string">"Ion"</span>, <span
+                        class="variable">25</span>);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s1.afisare();<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s2.afisare();<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    }
+                </p>
+            </div>
+            <p><strong>Afișare:</strong><br>
+            <div class="output">
+                <p style="padding-left: 10px;">111 Andrei 0 <br>
+                    222 Ion 25</p>
+            </div>
+            </p>
+        </ol>
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

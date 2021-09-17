@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html" style="color: #8B008B;">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Cuvinte cheie în Java(keywords)</h1><br>
+        <hr>
+        <p>
+            Cuvintele cheie Java sunt cunoscute și sub numele de cuvinte rezervate. Cuvintele cheie sunt cuvinte
+            particulare care acționează ca o cheie a unui cod. Acestea sunt cuvinte predefinite de Java, deci nu pot fi
+            utilizate ca nume de variabilă sau obiect sau nume de clasă.
+        </p>
+        <br>
+        <h2>Lista de cuvinte cheie</h2><br>
+        <p>
+            O listă de cuvinte cheie Java sau cuvinte rezervate este prezentată mai jos:
+            <ol>
+                <li><span class="keyword"><strong>abstract: </strong></span>este folosit pentru a declara o clasă abstractă. O clasă abstractă poate asigura implementarea interfeței. Poate avea metode abstracte și non-abstracte.</li>
+                <li><span class="keyword"><strong>boolean: </strong></span>este utilizat pentru a declara o variabilă ca tip boolean. Poate conține numai valori adevărate și false.</li>
+                <li><span class="keyword"><strong>break: </strong></span>este folosit pentru a ieșii din buclă. Întrerupe fluxul curent al programului în condiții specificate.</li>
+                <li><span class="keyword"><strong>byte: </strong></span>este utilizat pentru a declara o variabilă care poate conține valori de date pe 8 biți.</li>
+                <li><span class="keyword"><strong>case: </strong></span>utilizat cu declarațiile switch pentru a marca blocuri de instrucțiuni.</li>
+                <li><span class="keyword"><strong>catch: </strong></span>este folosit pentru a prinde excepțiile generate de instrucțiunile try. Acesta trebuie utilizat numai după blocul try.</li>
+                <li><span class="keyword"><strong>char: </strong></span>folosit pentru a declara o variabilă care poate conține caractere Unicode pe 16 biți nesemnate</li>
+                <li><span class="keyword"><strong>class: </strong></span>este utilizat pentru a declara o clasă.</li>
+                <li><span class="keyword"><strong>continue: </strong></span>este folosit pentru a continua bucla. Acesta continuă fluxul curent al programului și omite codul rămas în starea specificată.</li>
+                <li><span class="keyword"><strong>default: </strong></span>este utilizat pentru a specifica blocul de cod implicit într-o instrucțiune de comutare.</li>
+                <li><span class="keyword"><strong>do: </strong></span>este utilizat în instrucțiunea de control pentru a declara o buclă. Poate itera o parte a programului de mai multe ori.</li>
+                <li><span class="keyword"><strong>double: </strong></span>este folosit pentru a declara o variabilă care poate conține un număr în virgulă mobilă pe 64 de biți.</li>
+                <li><span class="keyword"><strong>else: </strong></span>este folosit pentru a indica ramurile alternative într-o declarație if.</li>
+                <li><span class="keyword"><strong>enum: </strong></span>este folosit pentru a defini un set fix de constante. Constructorii Enum sunt întotdeauna private sau implicite.</li>
+                <li><span class="keyword"><strong>extends: </strong></span>este folosit pentru a indica faptul că o clasă este derivată dintr-o altă clasă sau interfață.</li>
+                <li><span class="keyword"><strong>final: </strong></span>este folosit pentru a indica faptul că o variabilă deține o valoare constantă. Se folosește cu o variabilă, metodă sau clasă. Împreună cu o variabilă restricționeaza utilizatorul de la actualizarea valorii variabilei, împreună cu o metoda restricționeaza metoda a mai putea fi suprascrisă și împreuna cu o clasă restricționeaza clasa pentru a mai putea fi moștenită.</li>
+                <li><span class="keyword"><strong>finally: </strong></span>indică un bloc de cod într-o structură try-catch. Acest bloc este întotdeauna executat indiferent dacă este tratată sau nu o excepție.</li>
+                <li><span class="keyword"><strong>float: </strong></span>este folosit pentru a declara o variabilă care poate conține un număr în virgulă mobilă pe 32 de biți.</li>
+                <li><span class="keyword"><strong>for: </strong></span>este folosit pentru a porni o buclă for. Este folosit pentru a executa în mod repetat un set de instrucțiuni / funcții atunci când unele condiții devin adevărate. Dacă numărul de iterații este fix, se recomandă utilizarea buclei.</li>
+                <li><span class="keyword"><strong>if: </strong></span>testează starea. Execută blocul if dacă condiția este adevărată sau falsă.</li>
+                <li><span class="keyword"><strong>implements: </strong></span>este folosit pentru a implementa o interfață.</li>
+                <li><span class="keyword"><strong>import: </strong></span>face clasele și interfețele disponibile și accesibile pentru codul sursă curent.</li>
+                <li><span class="keyword"><strong>instanceof: </strong></span>este folosit pentru a testa dacă obiectul este o instanță a clasei specificate sau dacă implementează o interfață.</li>
+                <li><span class="keyword"><strong>int: </strong></span>este folosit pentru a declara o variabilă care poate conține un întreg semnat pe 32 de biți.</li>
+                <li><span class="keyword"><strong>interface: </strong></span>este folosit pentru a declara o interfață. Poate avea doar metode abstracte.</li>
+                <li><span class="keyword"><strong>long: </strong></span></span>este folosit pentru a declara o variabilă care poate conține un număr întreg pe 64 de biți.</li>
+                <li><span class="keyword"><strong>native: </strong></span>este folosit pentru a specifica că o metodă este implementată în codul nativ folosind JNI (Java Native Interface).</li>
+                <li><span class="keyword"><strong>new: </strong></span>este folosit pentru a crea obiecte noi.</li>
+                <li><span class="keyword"><strong>null: </strong></span>este folosit pentru a indica faptul că o referință nu se referă la nimic.</li>
+                <li><span class="keyword"><strong>package: </strong></span>este folosit pentru a declara un pachet Java care include clasele.</li>
+                <li><span class="keyword"><strong>private: </strong></span>este un modificator de acces. Este folosit pentru a indica faptul că o metodă sau o variabilă poate fi accesată numai în clasa în care este declarată.</li>
+                <li><span class="keyword"><strong>protected: </strong></span>este un modificator de acces. Poate fi accesibil în cadrul pachetului și în afara pachetului, dar numai prin moștenire. Nu poate fi aplicat împreună cu clasa.</li>
+                <li><span class="keyword"><strong>public: </strong></span>is an access modifier. It is used to indicate that an item is accessible anywhere. It has the widest scope among all other modifiers.</li>
+                <li><span class="keyword"><strong>return: </strong></span>este folosit pentru a reveni dintr-o metodă când executarea sa este completă.</li>
+                <li><span class="keyword"><strong>short: </strong></span>este folosit pentru a declara o variabilă care poate conține un număr întreg de 16 biți.</li>
+                <li><span class="keyword"><strong>static: </strong></span>este folosit pentru a indica faptul că o variabilă sau o metodă este o metodă de clasă. Cuvântul cheie static în Java este utilizat în principal pentru gestionarea memoriei.</li>
+                <li><span class="keyword"><strong>strictfp: </strong></span>este utilizat pentru a restricționa calculele în virgulă mobilă pentru a asigura portabilitatea.</li>
+                <li><span class="keyword"><strong>super: </strong></span>este o variabilă de referință care este utilizată pentru a se referi la obiectele clasei părinte. Poate fi folosit pentru a invoca metoda clasei părinte imediate.</li>
+                <li><span class="keyword"><strong>switch: </strong></span>conține o instrucțiune switch care execută cod pe baza valorii testului. Instrucțiunea switch testează egalitatea unei variabile cu valori multiple.</li>
+                <li><span class="keyword"><strong>synchronized: </strong></span>este folosit pentru a specifica secțiunile sau metodele critice din codul cu mai multe fire(multythreading).</li>
+                <li><span class="keyword"><strong>this: </strong></span>poate fi folosit pentru a referi obiectul curent într-o metodă sau constructor.</li>
+                <li><span class="keyword"><strong>throw: </strong></span>este folosit pentru a arunca în mod explicit o excepție. Cuvântul cheie throw este utilizat în principal pentru a arunca excepții personalizate. Este urmat de o instanță.</li>
+                <li><span class="keyword"><strong>throws: </strong></span>este folosit pentru a declara o excepție. Excepțiile verificate pot fi propagate cu "throws".</li>
+                <li><span class="keyword"><strong>transient: </strong></span>este utilizat în serializare. Dacă definiți orice membru de date ca tranzitoriu, acesta nu va fi serializat.</li>
+                <li><span class="keyword"><strong>try: </strong></span>este folosit pentru a porni un bloc de cod care va fi testat pentru excepții. Blocarea "try" trebuie urmată fie blocul "catch", fie de blocul "finally".</li>
+                <li><span class="keyword"><strong>void: </strong></span>este folosit pentru a specifica că o metodă nu returnează nimic.</li>
+                <li><span class="keyword"><strong>volatile: </strong></span>este folosit pentru a indica faptul că o variabilă se poate modifica asincron.</li>
+                <li><span class="keyword"><strong>while: </strong></span>este folosit pentru a porni o buclă "while". Această buclă repetă o parte a programului de mai multe ori. Dacă numărul de iterații nu este fix, se recomandă utilizarea buclei "while".</li>
+            </ol>
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

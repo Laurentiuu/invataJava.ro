@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html" style="color: #8B008B;">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>if-else</h1><br>
+        <hr>
+        <p>
+            În Java, instrucțiunea "if" este utilizată pentru a evalua o condiție. Controlul programului este deviat
+            în funcție de starea specifică. Condiția instrucțiunii If oferă o valoare booleană, fie adevărată, fie
+            falsă. În Java, există patru tipuri de instrucțiuni if date mai jos.
+        <ol>
+            <li>Afirmație simplă if</li>
+            <li>Afirmație if-else</li>
+            <li>Afirmație if-else-if</li>
+            <li>Afirmație if imbricată</li>
+        </ol>
+        </p>
+        <h2>1) Afirmație simplă <span class="keyword">if</span></h2>
+        <p>
+            Este cea mai de bază afirmație dintre toate instrucțiunile de flux de control din Java. Evaluează o expresie
+            booleană și permite programului să introducă un bloc de cod dacă expresia se evaluează la adevărat.<br><br>
+            <strong>Sintaxă</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">if</span>(condiție){<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">1</span>; <span class="comment">// se executa cand
+                    conditia este
+                    adevarata</span><br>
+                }
+            </p>
+        </div>
+        </p>
+
+        <h2>2) Afirmație <span class="keyword">if-else</span></h2>
+        <p>
+            Instrucțiunea if-else este o extensie a instrucțiunii if-care folosește un alt bloc de cod, adică blocul
+            else. Blocul else este executat dacă starea blocului if este evaluată ca fiind falsă.<br><br>
+            <strong>Sintaxă</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">if</span>(condiție){<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">1</span>; <span class="comment">// se executa cand
+                    conditia este
+                    adevarata</span><br>
+                }<br>
+                <span class="keyword">else</span>{<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">2</span>; <span class="comment">// se executa cand
+                    conditia este
+                    falsa</span><br>
+                }<br>
+            </p>
+        </div>
+        </p>
+
+        <h2>3) Afirmație <span class="keyword">if-else-if</span></h2>
+        <p>
+            Instrucțiunea if-else-if conține instrucțiunea if-urmată de mai multe instrucțiuni else-if. Cu alte cuvinte,
+            putem spune că lanțul de instrucțiuni if-else creează un arbore de decizie în care programul poate intra în
+            blocul de cod unde condiția este adevărată. De asemenea, putem defini o afirmație else la sfârșitul
+            lanțului.<br><br>
+            <strong>Sintaxă</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">if</span>(condiție <span class="variable">1</span>){<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">1</span>; <span class="comment">// se executa cand
+                    conditia 1 este
+                    adevarata</span><br>
+                }<br>
+                <span class="keyword">else if</span>(condiție <span class="variable">2</span>){<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">2</span>; <span class="comment">// se executa cand
+                    conditia 2 este
+                    adevarata</span><br>
+                }<br>
+                <span class="keyword">else</span>{<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">3</span>; <span class="comment">// se executa cand
+                    toate conditiile sunt false</span><br>
+                }<br>
+            </p>
+        </div>
+        </p>
+
+        <h2>4) Afirmație <span class="keyword">if imbricată</span></h2>
+        <p>
+            În instrucțiunile if imbricate, instrucțiunea if poate conține o instrucțiune if sau if-else în interiorul
+            altei instrucțiuni if sau else-if.<br><br>
+            <strong>Sintaxă</strong>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">if</span>(condiție <span class="variable">1</span>){<br>
+                &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">1</span>; <span class="comment">// se executa cand
+                    conditia 1 este
+                    adevarata</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">if</span>(condiție <span class="variable">2</span>){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">2</span>; <span
+                    class="comment">// se executa cand
+                    conditiile 1 si 2 sunt
+                    adevarate</span><br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">else</span>{<br>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;instrucțiune <span class="variable">3</span>; <span
+                    class="comment">// se executa cand
+                    conditia 1 este adevarata si conditia 2 e falsa</span><br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+            </p>
+        </div>
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

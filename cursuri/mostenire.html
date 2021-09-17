@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html" style="color: #8B008B;">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Moștenire în Java</h1><br>
+        <hr>
+        <p>
+            <strong>Moștenirea în Java</strong> este un mecanism în care un obiect dobândește toate proprietățile și
+            comportamentele unui
+            obiect părinte. Este o parte importantă a OOP-ului.<br><br>
+
+            Ideea din spatele moștenirii în Java este că puteți crea noi clase care sunt construite pe baza claselor
+            existente. Când moștenești dintr-o clasă existentă, poți reutiliza metodele și câmpurile clasei părinte. Mai
+            mult, puteți adăuga noi metode și câmpuri în clasa curentă.<br><br>
+
+            Moștenirea reprezintă relația IS-A, cunoscută și sub numele de relație părinte-copil.
+        </p>
+
+        <h2>De ce să folosești moștenirea în java?</h2>
+        <p>
+        <ul>
+            <li>Pentru Metoda Overriding (deci se poate realiza polimorfismul în timpul rulării).</li>
+            <li>Pentru reutilizarea codului.</li>
+        </ul>
+        </p>
+
+        <h2>Termeni folosiți în Moștenire</h2>
+        <p>
+        <ul>
+            <li><strong>Clasa: </strong>O clasă este un grup de obiecte care au proprietăți comune. Este un
+                șablon sau plan din care sunt create obiecte.</li>
+            <li><strong>Subclasă / Clasă copil:</strong>Subclasa este o clasă care moștenește cealaltă clasă. Se
+                mai numește o clasă derivată, clasă extinsă sau clasă copil.</li>
+            <li><strong>Super Class / Parent Class:</strong>Superclasa este clasa din care o subclasă moștenește
+                caracteristicile. Se mai numește o clasă de bază sau o clasă părinte.</li>
+            <li><strong>Reutilizare:</strong>După cum specifică și numele, reutilizarea este un mecanism care vă
+                facilitează reutilizarea câmpurilor și metodelor clasei existente atunci când creați o nouă
+                clasă. Puteți utiliza aceleași câmpuri și metode deja definite în clasa anterioară.</li>
+        </ul>
+        </p>
+
+        <h2>Sintaxa moștenirii Java</h2>
+        <p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">class</span> Subclasa <span class="keyword"> extends</span> Superclasa {<br>
+                &nbsp;&nbsp;&nbsp; <span class="comment">//metode si atribute</span> <br>
+                }
+            </p>
+        </div>
+        </p>
+        <p>
+            Cuvântul cheie "extends" indică faptul că creați o nouă clasă care derivă dintr-o clasă existentă. Înțelesul
+            "extinde" este de a spori funcționalitatea.
+
+            În terminologia Java, o clasă care este moștenită se numește părinte sau superclasă, iar noua clasă se
+            numește
+            copil sau subclasă.
+        </p>
+        <br>
+        <h2>Exemple</h2>
+        <p style="text-align: center;">
+            <img src="../img/img28.png" width="180px" height="350px">
+        </p>
+
+        <p>
+            După cum se arată în figura de mai sus, Programatorul este subclasa, iar Angajatul este superclasa. Relația
+            dintre cele două clase este <strong>Programator ESTE UN Angajat</strong> . Înseamnă că Programatorul este un
+            tip de Angajat.
+        </p>
+
+        <p><strong>Programator.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Angajat{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">float</span> salariu = <span class="variable">40000</span>;<br>
+                }<br><br>
+
+                <span class="keyword">public class</span> Programator <span class="keyword"> extends</span> Angajat
+                {<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">float</span> bonus = <span class="variable">10000</span>;<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programator p = <span class="keyword">new</span> Programator();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Salariul programatorului
+                    este: "</span> + p.salariu);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Bonusul programatorului
+                    este: "</span> + p.bonus);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">Salariul programatorului este: 40000 <br>
+                Bonusul programatorului este: 10000</p>
+        </div>
+        </p>
+
+        <p>
+            În exemplul de mai sus, obiectul Programator poate accesa câmpul clasei proprii, precum și al clasei
+            Angajat, adică reutilizarea codului.
+        </p>
+        <br>
+        <h2>Tipuri de moștenire în java</h2>
+        <p>
+            Pe baza clasei, pot exista trei tipuri de moștenire în java: unic, multinivel și ierarhic.<br><br>
+
+            În programarea Java, moștenirea multiplă și hibridă este acceptată numai prin interfață. Vom afla despre
+            interfețe mai târziu.
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img29.png" width="600px" height="350px">
+        </p>
+        <p>
+            Când o clasă moștenește mai multe clase, este cunoscută sub numele de moștenire multiplă. De exemplu:
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img30.png" width="600px" height="350px">
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

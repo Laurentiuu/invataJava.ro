@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html" style="color: #8B008B;">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Diferența dintre JDK, JRE și JVM</h1><br>
+        <hr>
+        <p>
+            Trebuie să înțelegem diferențele dintre JDK, JRE și JVM înainte de a continua cu Java.
+        </p><br>
+        <h2>JVM</h2>
+        <p>
+            JVM (Java Virtual Machine) este o mașină virtuală. Se numește mașină virtuală, deoarece nu există fizic.
+            Este o specificație care oferă un mediu de execuție în care codul oe octeți Java poate fi executat. De
+            asemenea,
+            poate rula programe scrise și în alte limbaje și compilate în cod de octeți Java.<br><br>
+            JVM-urile sunt disponibile pentru multe platforme hardware și software. JVM, JRE și JDK depind de platformă,
+            deoarece configurația fiecărui sistem de operare este diferită una de cealaltă. Cu toate acestea, Java este
+            independent de platformă. Există trei noțiuni ale JVM-ului: specificație, implementare și instanță.<br><br>
+            JVM efectuează următoarele sarcini principale:
+        <ul>
+            <li>Încarcă codul</li>
+            <li>Verifică codul</li>
+            <li>Execută codul</li>
+            <li>Oferă mediu în care poate rula aplicatia</li>
+        </ul>
+        </p>
+
+        <h2>JRE</h2>
+        <p>
+            JRE este un acronim pentru Java Runtime Environment. De asemenea, i se mai spune și Java RTE. Java Runtime
+            Environment este un set de instrumente software care sunt utilizate pentru dezvoltarea aplicațiilor Java.
+            Este folosit pentru a furniza mediul de rulare. Este o implementarea a JVM-ului. Exista fizic. Acesta
+            conține un set
+            de biblioteci + alte fișiere pe care JVM le folosește în runtime.<br><br>Implementarea JVM este, de
+            asemenea, lansată activ de alte companii, pe lângă Sun Micro Systems.
+        </p>
+        <img src="../img/img17.png " width="550px" height="350px"><br><br>
+
+        <h2>JDK</h2>
+        <p>
+            JDK este un acronim pentru Java Development Kit. Java Development Kit (JDK) este un mediu de dezvoltare
+            software care este utilizat pentru a dezvolta aplicații și applet-uri Java. Exista fizic. Conține
+            instrumente de dezvoltare JRE +.<br><br>JDK este o implementare a oricăreia dintre platformele Java de mai
+            jos, lansate de Oracle Corporation:
+        <ul>
+            <li>Standard Edition Java Platform</li>
+            <li>Enterprise Edition Java Platform</li>
+            <li>Micro Edition Java Platform</li>
+        </ul>
+        JDK conține o mașină virtuală Java privată (JVM) și câteva alte resurse, cum ar fi un interpretor
+        (java), un compilator (javac), un arhivator (jar), un generator de documentație (Javadoc) etc., pentru a
+        finaliza dezvoltarea unei aplicații Java.
+        </p>
+        <img src="../img/img18.png " width="550px" height="350px"><br><br>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.sideBar{
+    z-index: 10;
+    width: 300px;
+    height: 100%;
+    z-index: 10;
+    padding: 60px 0px;
+    color: #8B008B;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+p{
+    line-height: 1.6;
+    font-size: 16px;
+    overflow: auto; 
+    word-spacing: 3px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #8B008B;
+
+}
+
+h3{
+    background-color: #f3cac6;
+    padding: 20px 10px;
+    margin-top: -30px;
+    margin-left: -20px;
+    margin-right: -50px;
+}
+
+.content{
+    background-color: #f8f6ee;
+    padding: 90px 10px;
+    margin-top: -860px;
+    margin-right: 270px;
+    margin-left: 270px;
+    text-align: justify;
+    min-height: 650px;
+}
+
+.codeblock{
+    width: 100%;
+    background-color: #2C2C2C;
+    margin-bottom: 8px;
+    padding-left: 0;
+    margin-left: -2px;
+    border-left: 4px solid #8B008B !important;
+    border: 2px solid #808080;
+    color: #A3B4BF;
+}
+
+.output{
+    width: 100%;
+    background-color: #1C1C1C;
+    margin-bottom: 8px;
+    padding: 5px 0px;
+    color: white;
+}
+
+.br2{
+    line-height: 2;
+}
+
+.keyword{
+    color: #CC7832;
+}
+
+.string{
+    color: #577352;
+}
+
+.comment{
+    color: #808080;
+}
+
+.variable{
+    color: #6897BB;
+}

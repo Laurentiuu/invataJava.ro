@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html" style="color: #8B008B;">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Variabile în Java</h1><br>
+        <hr>
+        <img style="float: right;" src="../img/img19.png" width="400px" height="250px">
+        <p>
+            O variabilă este un container care deține valoarea în timp ce programul Java este executat. O variabilă este
+            alocată cu un tip de date.<br><br>
+            Variabila este un nume al locației de memorie. Există trei tipuri de variabile în java: locală, instanță și
+            statică.<br><br>Există două tipuri de tipuri de date în Java:
+        <ul>
+            <li>primitiv</li>
+            <li>neprimitiv</li>
+        </ul>
+        </p>
+
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">int</span> data = <span class="variable">10</span>;
+                <span class="comment">//am declarat o variabila</span>
+                <br>
+            </p>
+        </div>
+        <br>
+
+        <h2>Tipuri de variabile</h2><br>
+        <p>
+            Există trei tipuri de variabile în Java:
+        <ul>
+            <li>variabilă locală</li>
+            <li>variabilă Instanță</li>
+            <li>variabilă statică</li>
+        </ul>
+        </p>
+
+        <p>
+            <strong>1) Variabilă Locală</strong><br><br>
+            O variabilă declarată în corpul metodei se numește variabilă locală. Puteți utiliza această variabilă numai
+            în cadrul acelei metode, iar celelalte metode din clasă nici măcar nu știu că variabila există.<br><br>
+            O variabilă locală nu poate fi definită cu cuvântul cheie „static”.
+
+            <br><br>
+            <strong>2) Variabilă instanță</strong><br><br>
+            O variabilă declarată în interiorul clasei, dar în afara corpului metodei, se numește variabilă de instanță.
+            Nu este declarat static.
+            <br><br>
+            Se numește variabilă de instanță, deoarece valoarea sa este specifică instanței și nu este partajată între
+            instanțe.
+
+            <br><br>
+            <strong>3) Variabilă Statică</strong><br><br>
+            O variabilă declarată statică se numește variabilă statică. Nu poate fi locală. Puteți crea o singură copie
+            a
+            variabilei statice și o puteți partaja între toate instanțele clasei. Alocarea memoriei pentru variabilele
+            statice are loc o singură dată când clasa este încărcată în memorie.
+        </p>
+        <p><strong>A.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> A{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">static int</span> a = <span class="variable">100</span>;<span
+                    class="comment">//variabilă statică</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> method(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> b = <span
+                    class="variable">90</span>;<span class="comment">//variabilă locală</span><br>
+
+                &nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="keyword">int</span> c = <span
+                    class="variable">80</span>;<span class="comment">//variabilă instanță</span><br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <br>
+        <h2>Exemplu: suma a două numere</h2><br>
+        <p><strong>Simple.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Simple{<br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="keyword">int</span> a = <span
+                    class="variable">10</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="keyword">int</span> b = <span
+                    class="variable">10</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="keyword">int</span> c = a + b</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(c);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+
+        <p><strong>Afișare:</strong><br>
+            <div class="output">
+                <p style="padding-left: 10px;">20</p>
+            </div>
+        </p>
+
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>

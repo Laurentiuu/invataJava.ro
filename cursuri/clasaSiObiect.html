@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cursuriStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+</head>
+
+<body style="background-color: #ffe4e1;">
+    <!--Bara de navigare-->
+    <div class="navBar shadow">
+        <img style="float: left; padding-left: 10px;padding-right: 10px;" src="../img/logo.png" width="50px"
+            height="50px" alt="logo">
+        <a href="../index.html" class="active">Prima Pagină</a>
+        <a href="../cursuri/despreJava.html" style="float: left;">Cursuri</a>
+        <a href="../carti.html" style="float: left;">Cărți</a>
+        <a href="../contact.html" style="float: left;">Contact</a>
+    </div>
+
+    <div class="sideBar">
+        <ul>
+            <li style="list-style: none;">Tutorial Java</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="despreJava.html">Despre Java</a></li>
+                <li><a href="aplicatiaJava.html">Aplicația "Hello Java"</a></li>
+                <li><a href="jdkJreJvm.html">JDK, JRE, și JVM</a></li>
+                <li><a href="variabile.html">Variabile</a></li>
+                <li><a href="tipuriDeDate.html">Tipuri de date</a></li>
+                <li><a href="tablouri.html">Tablouri</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="keywords.html">Keywords</a></li>
+                <li><a href="metoda.html">Metodă</a></li>
+                <li><a href="constructor.html">Constructor</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Instrucţiuni</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="instrDeControl.html">Instrucţiunile de control</a></li>
+                <li><a href="if.html">if-else</a></li>
+                <li><a href="switch.html">switch</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="doWhile.html">do-while</a></li>
+                <li><a href="for.html">for</a></li>
+                <li><a href="breakContinue.html">break și continue</a></li>
+                <li><a href="comentarii.html">Comentarii</a></li>
+            </ul>
+            <br>
+            <li style="list-style: none;">Principiile OOP</li>
+            <ul style="margin-left: -10px;">
+                <li><a href="clasaSiObiect.html" style="color: #8B008B;">Clasă și Obiect</a></li>
+                <li><a href="mostenire.html">Moștenire</a></li>
+                <li><a href="polimorfism.html">Polimorfism</a></li>
+                <li><a href="abstractizare.html">Abstractizare</a></li>
+                <li><a href="incapsulare.html">Încapsulare</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Clasă și Obiect în Java</h1><br>
+        <hr>
+        <h2>Principiile OOP</h2>
+        <p>
+            În imaginea de mai jos se pot observa principiile programării orientate pe obiect. Acestea sunt așezate pe
+            diferite nivele fiecare principiu provenind din altul.
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img27.png" width="500px" height="350px">
+        </p>
+        <br>
+        <p>
+            În această pagină, vom afla despre obiecte și clase Java. În tehnica de programare orientată obiect,
+            proiectăm un program folosind obiecte și clase acestea fiind bazele programării pe obiect.<br><br>
+            <strong>Un obiect în Java este entitatea fizică și logică, în timp ce o clasă în Java este doar o entitate logică.</strong>
+        </p>
+        <br>
+        <img style="float: right;" src="../img/img24.png" width="500px" height="350px">
+        <br>
+        <h2>Ce este un obiect în Java?</h2>
+        <p>
+            O entitate care are stare și comportament este cunoscută ca obiect, de exemplu, scaun, bicicletă, marcator,
+            stilou, masă, mașină etc. Poate fi fizică sau logică (tangibilă și intangibilă). Exemplul unui obiect
+            intangibil este sistemul bancar.<br><br>
+            Un obiect are trei caracteristici:
+        <ul>
+            <li><strong>Stare:</strong> reprezintă datele (valoarea) unui obiect.</li>
+            <li><strong>Comportament:</strong> reprezintă comportamentul (funcționalitatea) unui obiect precum
+                depunerea, retragerea etc.</li>
+            <li><strong>Identitate:</strong> O identitate de obiect este de obicei implementată printr-un ID unic.
+                Valoarea ID-ului nu este vizibilă pentru utilizatorul extern. Cu toate acestea, este utilizat intern de
+                JVM pentru a identifica fiecare obiect în mod unic.</li>
+        </ul>
+        </p>
+        <p>
+            De exemplu, Pen este un obiect. Numele său este BIC; culoarea este albă, cunoscută sub numele de starea sa.
+            Se folosește pentru a scrie, deci scrisul este comportamentul său.
+        </p>
+        <p>
+            <strong>Un obiect este o instanță a unei clase.</strong>O clasă este un șablon sau plan din care sunt create
+            obiecte. Deci, un obiect este instanța (rezultatul) unei clase.<br><br>
+            <strong>Definiții de obiecte:</strong>
+        <ul>
+            <li>Un obiect este o entitate din lumea reală.</li>
+            <li>Un obiect este o entitate de execuție.</li>
+            <li>Obiectul este o entitate care are stare și comportament.</li>
+            <li>Obiectul este o instanță a unei clase.</li>
+        </ul>
+        </p>
+
+        <h2>Ce este o clasă în Java?</h2>
+        <img style="float: right;" src="../img/img25.png" width="500px" height="350px">
+        <p>
+            O clasă este un grup de obiecte care au proprietăți comune. Este un șablon sau plan din care sunt create
+            obiecte. Este o entitate logică. Nu poate fi fizic.<br><br>
+        <p>
+            O clasă în Java poate conține:<br>
+        <ul>
+            <li>Câmpuri</li>
+            <li>Metode</li>
+            <li>Constructori</li>
+            <li>Blocuri</li>
+            <li>Clasa și interfața imbricate</li>
+        </ul>
+        </p>
+        </p>
+
+        <p>
+            Sintaxa pentru a declara o clasă:
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">class</span> &lt;numele_clasei&gt;{<br>
+                &nbsp;&nbsp;&nbsp; câmpuri;<br>
+                &nbsp;&nbsp;&nbsp; metode;<br>
+                }
+            </p>
+        </div>
+        </p>
+
+        <h2>Variabilă de instanță în Java</h2>
+        <p>
+            O variabilă care este creată în interiorul clasei, dar în afara metodei este cunoscută ca o variabilă de
+            instanță. Variabila de instanță nu obține memorie în momentul compilării. Obține memorie în timpul rulării
+            atunci când este creat un obiect sau o instanță. De aceea este cunoscut ca o variabilă de instanță.
+        </p>
+
+        <h2>Exemplu</h2>
+        <p>
+            În acest exemplu, creăm cele două obiecte ale clasei Student și inițializăm valoarea acestor obiecte prin
+            invocarea metodei adaugareStudent(). Aici afișăm starea (datele) obiectelor prin invocarea metodei
+            afisare().
+        </p>
+        <p><strong>Student.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Student{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">int</span> id;<br>
+                &nbsp;&nbsp;&nbsp;String nume;<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="comment">//crearea unui constructor cu doua argumente</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> adaugareStudent(<span class="keyword">int</span> i,
+                String n){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.id = i;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.nume = n;<br>
+
+                &nbsp;&nbsp;&nbsp;}<br>
+                <br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> afisare(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(id + <span class="string">" "</span> + nume
+                <span class="string">" "</span> + varsta);<br>
+
+                &nbsp;&nbsp;&nbsp;}<br>
+                <br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//apelare constructor</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student s1 = <span class="keyword">new</span> Student(<span
+                    class="variable">111</span>, <span class="string">"Andrei"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student s2 = <span class="keyword">new</span> Student(<span
+                    class="variable">111</span>, <span class="string">"Ion"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s1.afisare();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s2.afisare();<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">111 Andrei 0 <br>
+                222 Ion 25</p>
+        </div>
+        </p>
+        <p style="text-align: center;">
+            <img src="../img/img26.png" width="500px" height="300px">
+        </p>
+        <p>
+            După cum puteți vedea în figura de mai sus, obiectul obține memoria în zona de memorie heap. Variabila de
+            referință se referă la obiectul alocat în zona de memorie heap. Aici, s1 și s2 sunt variabile de referință
+            care se referă la obiectele alocate în memorie.
+        </p>
+        <br>
+        <h2>Obiect anonim</h2>
+        <p>
+            Anonim înseamnă pur și simplu fără nume. Un obiect care nu are nicio referință este cunoscut ca obiect
+            anonim. Poate fi utilizat numai în momentul creării obiectului.<br><br>
+
+            Dacă trebuie să utilizați un obiect o singură dată, un obiect anonim este o abordare bună. De exemplu:
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">new </span>Calculation(); <span class="comment">//obiect anonim</span><br>
+            </p>
+        </div>
+        <p>
+            Metoda de apelare printr-un obiect anonim
+        </p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">new </span>Calculation().fact(<span class="variable">5</span>);<br>
+            </p>
+        </div>
+        <p>
+            Să vedem exemplul complet al unui obiect anonim în Java.
+        </p>
+
+        <p><strong>Calculation.java</strong></p>
+        <div class="codeblock">
+            <p style="padding-left: 10px;">
+                <span class="keyword">public class</span> Calculation{<br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">void</span> fact(<span class="keyword">int</span> n){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> fact = <span
+                    class="variable">1</span>; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">for</span> i
+                = <span class="variable">1</span>; i &lt;= n; i++){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspfact = fact * i; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Factorialul este"</span> +
+                fact);<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                <br>
+
+                &nbsp;&nbsp;&nbsp;<span class="keyword">public static void </span>main(String args[]){<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">new </span>Calculation().fact(<span
+                    class="variable">5</span>);<span class="comment">//apelare obiect anonim</span><br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <p><strong>Afișare:</strong><br>
+        <div class="output">
+            <p style="padding-left: 10px;">Factorialul este 120<br>
+            </p>
+        </div>
+        </p>
+
+
+        </p>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/img11.png" width="20px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/laurentiu-galis/" target="_blank"><img src="../img/img12.png" width="30px"
+                height="30px" alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/" target="_blank"><img src="../img/img13.png" width="30px" height="30px"
+                alt="img"></a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/" target="_blank"><img src="../img/img14.png" width="40px" height="30px"
+                alt="img"></a>
+        <br>
+        <p style="float: left; font-size: 10px;margin-top: 30px;">©copyright 2021 invataJava.ro</p>
+    </footer>
+</body>
+
+</html>
